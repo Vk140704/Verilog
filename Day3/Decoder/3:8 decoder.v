@@ -3,7 +3,7 @@ module dc(
 	output reg [7:0]y
 	);
 always@(*)begin
-//y=0;
+ y=0; //it used to give the entire 8bit of y is 0's in that we choose the d position as 1 if we not give it consider y value as unknown and type d value on specific places
  casex(d)
 3'b000: y[0]=1'b1;
 3'b001: y[1]=1'b1;
